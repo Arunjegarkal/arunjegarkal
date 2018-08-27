@@ -32,7 +32,26 @@
 
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
-
+	<style type="text/css">
+	.popup {
+		zoom:1.0;
+		position:relative;
+		text-decoration:none;
+	}
+	.popup span {
+		position:fixed;
+		top:200px;
+		left:300px;
+		width:250px;
+		padding:10px;
+		left:-999em;
+		z-index:990;
+			
+	}
+	.popup:hover {visibility:visible}
+	.popup:hover span {left:650px;}
+	* html .popup span {position:absolute;}
+	</style>
   </head>
 
   <body id="page-top">
@@ -63,6 +82,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#certifications">Certifications</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
@@ -142,7 +164,7 @@
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Data Warehouse Analyst</h3>
+              <h3 class="mb-0">Software Engineer - Data Warehouse Analyst</h3>
               <div class="subheading mb-3">EVRY India Pvt Ltd, Bangalore, India</div>
               <p>As a Data Warehouse Analyst, I was responsible for the Extraction, Transformation and Loading of data from multiple sources using Informatica ETL tools and SQL. To perform these duties, a deep understanding of the Data Warehousing concepts were required. Thus, I used Informatica Designer for designing and developing mappings from varied transformation logic using Expression, Source Qualifier, Filter, Router, Joiner, Lookup, Sorter, Aggregator and Update Strategy. I also designed ETL logic for Dimension Tables using SCD – Type1 and Type2. Last, I worked with heterogeneous data sources like DB2, Flat Files and Mainframe Files to accomplish the goals of the organization.</p>
             </div>
@@ -464,7 +486,34 @@
           </div>
 		
       </section>
-
+	  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="certifications">
+        <div class="my-auto">
+          <h2 class="mb-5">Certifications </h2>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+				<p><a class="popup" href="#">Google Analytics<span><img src="img/Google_Analytics.png" width='500' height='350'></span></a> </p>
+			</li>
+            <li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+				<p><a class="popup" href="#">Apache Spark<span><img src="img/apache_spark.png" width='500' height='350'></span></a> </p>
+			</li>
+			<li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+				<p><a class="popup" href="#">Looker First Look<span><img src="img/Looker.png" width='500' height='350'></span></a> </p>
+			</li>
+			<li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+				<p><a class="popup" href="#">Oracle Database 12c: Advanced SQL<span><img src="img/Oracle_adv.png" width='500' height='350'></span></a> </p>
+			</li>
+			<li>
+              <i class="fa-li fa fa-certificate text-warning"></i>
+				<p><a class="popup" href="#">Oracle Database 12c: Basic SQL<span><img src="img/Oracle.png" width='500' height='350'></span></a> </p>
+			</li>
+            
+          </ul>
+        </div>
+      </section>
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
         <div class="my-auto">
           <h2 class="mb-5">Honors, Awards &amp; Achievements </h2>
@@ -472,6 +521,7 @@
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
               Geospatial Visualization of Twitter Data - Poster presentation at national workshop for NSF grant support.</li>
+			  
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
               Awarded competitive scholarship: 75% fee waiver by Texas Tech University.</li>
