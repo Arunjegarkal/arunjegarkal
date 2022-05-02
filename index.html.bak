@@ -346,7 +346,7 @@
             <li>
 			<li>
               <i class="fa-li fa fa-check"></i>
-              <b>Amazon Web Services :</b> S3, Lambda, SQS, SES, SNS, Step functions, Cloud Watch logs, Secret manager, Cloud Front, SSO,Cognito, EC2, EKS, ECR, Glue Etc.., 
+              <b>Amazon Web Services :</b> S3, Lambda, SQS, SES, SNS, Step functions, Cloud Front, SSO,Cognito, EC2, EKS, ECR, Glue Etc.., 
 			</li>
 			<li>
               <i class="fa-li fa fa-check"></i>
